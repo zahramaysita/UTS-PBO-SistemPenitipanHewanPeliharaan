@@ -14,10 +14,10 @@ Kelas : A'2025
 # PENDAHULUAN
 ## 1.1 Deskripsi Program
 
-Sistem Penitipan Hewan merupakan program berbasis Java yang dibuat untuk membantu mengelola data hewan dan data penitipan hewan. Program ini memiliki beberapa fitur seperti menambah, menampilkan, mengubah, menghapus, dan mencari data hewan, serta mengelola data penitipan hewan yang tersimpan dalam sistem.
+Sistem Penitipan Hewan merupakan program berbasis Java yang dibuat untuk membantu mengelola data hewan dan data penitipan hewan. Program ini memiliki berbagai fitur seperti menambah, menampilkan, mengubah, menghapus, dan mencari data hewan, serta mengelola data penitipan yang tersimpan dalam sistem. 
 
-Program ini dibuat dengan menerapkan konsep Object Oriented Programming (OOP), yaitu dengan membagi program ke dalam beberapa class sesuai dengan fungsinya. Class Hewan digunakan sebagai superclass untuk menyimpan data hewan. Class Kucing, Anjing, dan MamaliaKecil merupakan subclass yang mewarisi atribut dan method dari class Hewan. Selanjutnya, class Kelinci dan Hamster mewarisi class MamaliaKecil sehingga program menerapkan Hierarchical Inheritance dan Multilevel Inheritance. Selain itu, class Penitipan digunakan untuk menyimpan data penitipan, sedangkan class Service digunakan untuk mengatur proses pengolahan data.
-Program ini menerapkan validasi input untuk memastikan data yang dimasukkan sesuai dengan ketentuan yang telah ditetapkan. Selain itu, program juga menerapkan polymorphism (method overriding) pada method getInfo() yang terdapat pada class turunan hewan. Dengan adanya penerapan konsep OOP dan validasi input, program menjadi lebih terstruktur, mudah dikembangkan, serta dapat mengurangi kesalahan dalam pengolahan data.
+Dalam pembangunannya, program menerapkan konsep Object Oriented Programming (OOP) dengan membagi program ke dalam beberapa class sesuai fungsinya. Class Hewan digunakan sebagai superclass untuk menyimpan data hewan, sedangkan class Kucing, Anjing, dan MamaliaKecil merupakan subclass yang mewarisi atribut dan method dari class Hewan. Selanjutnya, class Kelinci dan Hamster mewarisi class MamaliaKecil, sehingga program menerapkan Hierarchical Inheritance dan Multilevel Inheritance. Selain itu, class Penitipan digunakan untuk menyimpan data penitipan, sedangkan class Service digunakan untuk mengelola proses pengolahan data. Program juga menerapkan validasi input untuk memastikan data yang dimasukkan sesuai dengan ketentuan serta menerapkan polymorphism (method overriding) pada method getInfo() untuk menampilkan informasi hewan sesuai jenisnya. Dengan penerapan konsep OOP dan validasi input, program menjadi lebih terstruktur, mudah dikembangkan, serta membantu mengurangi kesalahan dalam pengolahan data.
+
 
 ## 1.2 Tujuan Program
 
