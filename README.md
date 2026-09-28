@@ -75,7 +75,7 @@ Program juga menerapkan validasi input pada menu utama sehingga pengguna hanya d
 Gambar di atas menampilkan data hewan yang tersimpan di dalam sistem. Data yang ditampilkan merupakan dummy data yang ditambahkan sebagai data awal program sehingga saat menu Tampilkan Data Hewan dijalankan sudah terdapat data yang dapat ditampilkan. Informasi yang ditampilkan meliputi ID hewan, nama hewan, jenis hewan, serta informasi lainnya sesuai dengan data yang tersimpan. Selain menampilkan dummy data, menu ini juga dapat menampilkan data baru yang berhasil ditambahkan oleh pengguna melalui menu tambah data hewan.
 
 
-<img width="336" height="615" alt="image" src="https://github.com/user-attachments/assets/b947b180-d0dc-4687-9a28-bc79a184eeb8" />
+<img width="377" height="507" alt="image" src="https://github.com/user-attachments/assets/40760a72-dbb6-4ec0-a8fa-ee2a4b89ca78" />
 
 Gambar di atas menampilkan data yang sudah ditambahkan dan tersimpan di dalam sistem. Pada menu tampilkan data hewan, informasi yang ditampilkan berupa ID hewan, nama hewan, jenis hewan dan ras hewan.
 
