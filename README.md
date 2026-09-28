@@ -16,9 +16,8 @@ Kelas : A'2025
 
 Sistem Penitipan Hewan merupakan program berbasis Java yang dibuat untuk membantu mengelola data hewan dan data penitipan hewan. Program ini memiliki beberapa fitur seperti menambah, menampilkan, mengubah, menghapus, dan mencari data hewan, serta mengelola data penitipan hewan yang tersimpan dalam sistem.
 
-Program ini dibuat dengan menerapkan konsep Object Oriented Programming (OOP), yaitu dengan membagi program ke dalam beberapa class sesuai dengan fungsinya. Class Hewan digunakan sebagai superclass untuk menyimpan data hewan, sedangkan class Kucing, Anjing, Kelinci, dan Hamster digunakan sebagai subclass yang mewarisi atribut dan method dari class Hewan. Selain itu, class Penitipan digunakan untuk menyimpan data penitipan, sedangkan class Service digunakan untuk mengatur proses pengolahan data. Program juga menggunakan object, constructor, ArrayList, percabangan, dan perulangan dalam proses pengelolaan data.
-
-Program ini menerapkan validasi input untuk memastikan data yang dimasukkan sesuai dengan ketentuan yang telah ditetapkan. Selain itu, program juga menerapkan nilai tambah berupa polymorphism (method overriding) pada method getInfo() yang terdapat pada class turunan hewan. Dengan adanya penerapan konsep OOP dan validasi input, program menjadi lebih terstruktur, mudah dikembangkan, serta dapat mengurangi kesalahan dalam pengolahan data.
+Program ini dibuat dengan menerapkan konsep Object Oriented Programming (OOP), yaitu dengan membagi program ke dalam beberapa class sesuai dengan fungsinya. Class Hewan digunakan sebagai superclass untuk menyimpan data hewan. Class Kucing, Anjing, dan MamaliaKecil merupakan subclass yang mewarisi atribut dan method dari class Hewan. Selanjutnya, class Kelinci dan Hamster mewarisi class MamaliaKecil sehingga program menerapkan Hierarchical Inheritance dan Multilevel Inheritance. Selain itu, class Penitipan digunakan untuk menyimpan data penitipan, sedangkan class Service digunakan untuk mengatur proses pengolahan data.
+Program ini menerapkan validasi input untuk memastikan data yang dimasukkan sesuai dengan ketentuan yang telah ditetapkan. Selain itu, program juga menerapkan polymorphism (method overriding) pada method getInfo() yang terdapat pada class turunan hewan. Dengan adanya penerapan konsep OOP dan validasi input, program menjadi lebih terstruktur, mudah dikembangkan, serta dapat mengurangi kesalahan dalam pengolahan data.
 
 ## 1.2 Tujuan Program
 
@@ -73,7 +72,8 @@ Program juga menerapkan validasi input pada menu utama sehingga pengguna hanya d
 
 <img width="542" height="160" alt="image" src="https://github.com/user-attachments/assets/db4e200b-5820-4fee-9b95-2274e1276612" />
 
-Gambar di atas menampilkan data hewan yang tersimpan di dalam sistem. Data yang ditampilkan merupakan dummy data yang telah ditambahkan sebelumnya ke dalam ArrayList sebagai data awal program. Penerapan dummy data ini dilakukan untuk memenuhi ketentuan program, yaitu agar fitur read dapat langsung menampilkan data tanpa pengguna harus melakukan input data terlebih dahulu. Informasi yang ditampilkan meliputi ID hewan, nama hewan, dan jenis hewan. Selain menampilkan dummy data, menu ini juga dapat menampilkan data baru yang berhasil ditambahkan oleh pengguna melalui menu tambah data hewan.
+Gambar di atas menampilkan data hewan yang tersimpan di dalam sistem. Data yang ditampilkan merupakan dummy data yang ditambahkan sebagai data awal program sehingga saat menu Tampilkan Data Hewan dijalankan sudah terdapat data yang dapat ditampilkan. Informasi yang ditampilkan meliputi ID hewan, nama hewan, jenis hewan, serta informasi lainnya sesuai dengan data yang tersimpan. Selain menampilkan dummy data, menu ini juga dapat menampilkan data baru yang berhasil ditambahkan oleh pengguna melalui menu tambah data hewan.
+
 
 <img width="336" height="615" alt="image" src="https://github.com/user-attachments/assets/b947b180-d0dc-4687-9a28-bc79a184eeb8" />
 
@@ -228,17 +228,28 @@ Gambar di atas menunjukkan penerapan encapsulation pada class Hewan. Penerapan i
 
 Inheritance atau pewarisan merupakan konsep OOP yang memungkinkan suatu class mewarisi atribut dan method dari class lain. Dengan adanya inheritance, kode dapat digunakan kembali sehingga program menjadi lebih terstruktur dan mengurangi penulisan kode yang berulang.
 
-Pada program Sistem Penitipan Hewan, inheritance diterapkan pada class Kucing, Anjing, Kelinci, dan Hamster yang mewarisi class Hewan sebagai superclass. Dengan pewarisan tersebut, setiap subclass dapat menggunakan atribut dan method yang sudah dimiliki oleh class Hewan tanpa perlu menuliskannya kembali.
+Pada program Sistem Penitipan Hewan, diterapkan dua tipe inheritance yaitu Hierarchical Inheritance dan Multilevel Inheritance. Hierarchical Inheritance diterapkan pada class Kucing, Anjing, dan MamaliaKecil yang mewarisi class Hewan sebagai superclass. Sedangkan Multilevel Inheritance diterapkan pada class Kelinci dan Hamster yang mewarisi class MamaliaKecil, dimana class MamaliaKecil sendiri merupakan turunan dari class Hewan.
+
+Dengan penerapan inheritance tersebut, setiap subclass dapat menggunakan atribut dan method yang dimiliki oleh class induknya tanpa perlu menuliskan kembali kode yang sama. Hal ini membuat program menjadi lebih terstruktur, mudah dikembangkan, dan mengurangi duplikasi kode.
+
+class anjing
 
 <img width="405" height="52" alt="image" src="https://github.com/user-attachments/assets/9b07b5fd-d703-46e8-a32c-aab63643caee" />
 
-<img width="382" height="45" alt="image" src="https://github.com/user-attachments/assets/e64ce2a0-a131-4e9e-839a-5844498067a3" />
-
-<img width="376" height="37" alt="image" src="https://github.com/user-attachments/assets/14540c4f-2450-43e5-a6f7-4b691a157b5a" />
+class kucing
 
 <img width="371" height="47" alt="image" src="https://github.com/user-attachments/assets/44704e5a-e404-45a5-8df3-fe9e57514c4f" />
 
-## 3.3 Polymorphism (Method Overriding) Nilai Tambah
+class Kelinci 
+
+<img width="446" height="42" alt="image" src="https://github.com/user-attachments/assets/f3f41dac-7918-4b53-9553-84df76494ff3" />
+
+class Hamster
+
+<img width="462" height="46" alt="image" src="https://github.com/user-attachments/assets/571521a6-8003-47da-85a8-c5d9b233f6e6" />
+
+
+## 3.3 Polymorphism (Method Overriding) 
 
 Polymorphism merupakan konsep OOP yang memungkinkan method dengan nama yang sama memiliki perilaku yang berbeda pada class yang berbeda. Pada program ini, polymorphism diterapkan menggunakan method overriding, yaitu subclass membuat kembali method yang sudah ada pada superclass sesuai dengan kebutuhannya.
 
@@ -249,22 +260,29 @@ Polymorphism diterapkan pada method tampilkanHewan(). Pada saat data hewan ditam
 
 Letak overriding: class Kucing, Anjing, Kelinci, dan Hamster
 
+
+class kucing
+
 <img width="505" height="145" alt="image" src="https://github.com/user-attachments/assets/2ffad36e-4752-4864-8893-84db2eb8d898" />
 
 
+class anjing
 
 <img width="431" height="92" alt="image" src="https://github.com/user-attachments/assets/933e5761-b3d9-4db3-8143-fc51937c767c" />
 
 
+class kelinci
 
-<img width="440" height="86" alt="image" src="https://github.com/user-attachments/assets/ed3bd48a-35f2-421f-bf47-c1b712065212" />
-
-
-
-<img width="432" height="82" alt="image" src="https://github.com/user-attachments/assets/400bcb66-31bc-4a4d-8d09-a3417c24bee0" />
+<img width="445" height="97" alt="image" src="https://github.com/user-attachments/assets/32ecfad7-6368-420a-966e-7797f4377c20" />
 
 
+class hamster
 
-Pada gambar di bawah, method getInfo() berhasil dijalankan pada menu Tampilkan Data Hewan. Hal ini dapat dilihat dari output yang ditampilkan, di mana setiap jenis hewan menghasilkan informasi yang berbeda meskipun menggunakan method yang sama. Sebagai contoh, data kucing menampilkan informasi "Kucing - Milo", sedangkan data anjing menampilkan informasi "Anjing - Bruno". Dengan demikian, penerapan polymorphism melalui method overriding pada program ini telah berhasil dilakukan.
+<img width="430" height="92" alt="image" src="https://github.com/user-attachments/assets/cef1ef6c-f9f7-4664-9f78-e70b9af653a1" />
 
-<img width="282" height="622" alt="image" src="https://github.com/user-attachments/assets/62a18ef8-9f9f-48f8-8d5d-f43575c4b691" />
+
+
+Method Overriding diterapkan pada method getInfo() yang terdapat pada class Hewan dan kemudian dioverride oleh class turunannya. Pada program ini, class Kucing dan Anjing merupakan hasil penerapan Hierarchical Inheritance, sedangkan class Kelinci dan Hamster merupakan hasil penerapan Multilevel Inheritance melalui class MamaliaKecil. Setiap subclass memiliki implementasi method getInfo() yang berbeda sehingga informasi yang ditampilkan menyesuaikan jenis hewan. Pada gambar di bawah, method getInfo() berhasil dijalankan pada menu Tampilkan Data Hewan. Hal ini dapat dilihat dari output yang ditampilkan, di mana setiap jenis hewan menghasilkan informasi yang berbeda meskipun menggunakan method yang sama. Sebagai contoh, objek bertipe Kelinci menampilkan informasi "Mamalia Kecil - lula(Kelinci)", sedangkan objek bertipe Kucing dan Anjing akan menampilkan informasi sesuai dengan implementasi method pada subclass masing-masing. Dengan demikian, penerapan polymorphism melalui method overriding pada program ini telah berhasil dilakukan karena method yang sama dapat menghasilkan perilaku yang berbeda pada setiap objek turunan.
+
+
+<img width="377" height="507" alt="image" src="https://github.com/user-attachments/assets/9e5db0b8-fd62-474b-8e30-b187549e4528" />
